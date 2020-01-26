@@ -1,0 +1,23 @@
+<%- include ('partials/header.ejs');  -%>
+	<div class="sidebar">
+		<div class="sidebar_wrapper">
+			<a href="/login"> Registrierungen </a>
+			<a href="/login"> Buchungen</a>
+			<a href="/login"> Forderungen </a>
+			<a href="/login"> Zahlungen </a>
+			<a href="/login"> Tagungsprogramm </a>
+			<a href="/login"> Login </a>
+		</div>
+	</div>
+	<div class="main">
+		<form action="/login" method="POST" class="form">
+			<input type = "text" name = "email" placeholder="Email" autocomplete="off" required>
+			<br>
+			<input type = "text" name = "password" placeholder="Password" autocomplete="off" required>
+			<br>
+			<button class="submit">Anmelden</button>
+		</form>
+	</div>
+</div>
+
+<%- include ('partials/footer.ejs');  -%>

@@ -1,0 +1,525 @@
+<%- include ('partials/header.ejs');  -%>
+	<div class="sidebar">
+		<div class="sidebar_wrapper">
+			<a href="#"> Registrierungen </a>
+			<a href="#"> Buchungen</a>
+			<a href="#"> Forderungen </a>
+			<a href="#"> Zahlungen </a>
+			<a href="/tagung"> Tagungsprogramm </a>
+			<a href="/login"> Logout </a>
+		</div>
+	</div>
+	<div class="main">
+		<table align="center">
+			<tr>
+				<th></th>
+				<th class="header_table">8-10</th>
+				<th>10-12</th>
+				<th>12-14</th>
+				<th>14-16</th>
+				<th>16-18</th>
+			</tr>
+
+			<tr>
+				<td>Montag</td>
+				<td>
+				 <% input.forEach(function(tagung){ %>
+					<% if (tagung.tag == "Montag" && tagung.zeitpunkt=="8-10") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+					<% } %>
+				<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Montag" && tagung.zeitpunkt=="10-12") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Montag" && tagung.zeitpunkt=="12-14") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Montag" && tagung.zeitpunkt=="14-16") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Montag" && tagung.zeitpunkt=="16-18") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>				
+			</tr>
+
+			<tr>
+				<td>Dienstag</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Dienstag" && tagung.zeitpunkt=="8-10") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Dienstag" && tagung.zeitpunkt=="10-12") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Dienstag" && tagung.zeitpunkt=="12-14") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Dienstag" && tagung.zeitpunkt=="14-16") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Dienstag" && tagung.zeitpunkt=="16-18") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Mittwoch</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Mittwoch" && tagung.zeitpunkt=="8-10") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Mittwoch" && tagung.zeitpunkt=="10-12") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Mittwoch" && tagung.zeitpunkt=="12-14") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Mittwoch" && tagung.zeitpunkt=="14-16") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Mittwoch" && tagung.zeitpunkt=="16-18") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Donnerstag</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Donnerstag" && tagung.zeitpunkt=="8-10") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Donnerstag" && tagung.zeitpunkt=="10-12") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Donnerstag" && tagung.zeitpunkt=="12-14") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Donnerstag" && tagung.zeitpunkt=="14-16") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Donnerstag" && tagung.zeitpunkt=="16-18") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Freitag</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Freitag" && tagung.zeitpunkt=="8-10") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Freitag" && tagung.zeitpunkt=="10-12") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Freitag" && tagung.zeitpunkt=="12-14") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Freitag" && tagung.zeitpunkt=="14-16") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+				<td>
+				 	<% input.forEach(function(tagung){ %>
+						<% if (tagung.tag == "Freitag" && tagung.zeitpunkt=="16-18") { %>
+							<div class="TDcontainer">
+								<div class="info">
+									"<%=tagung.name%>"<br>
+									<%=tagung.redner%><br>
+									<%=tagung.raum%><br>
+								</div>
+								<div class="button">
+									<a href="/tagung/<%= tagung.id %>/edit">Ändern</a>
+									<form action="/tagung/<%= tagung.id %>?_method=DELETE" method="POST">
+				        				<button type="submit"> Löschen </button>
+				    				</form>
+								</div>
+							</div>
+						<% }%>
+					<% }); %>
+				</td>
+			</tr>
+		</table>
+		<div class="anlegen">
+			<a href="/tagung/new">Anlegen</a>
+		</div>
+	</div>
+</div>
+
+<%- include ('partials/footer.ejs');  -%>

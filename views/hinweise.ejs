@@ -1,0 +1,22 @@
+<%- include ('partials/header.ejs');  -%>
+	<div class="sidebar">
+		<div class="sidebar_wrapper">
+			<a href="/"> Übersicht </a>
+			<a href="#"> Tagungsprogramm erstellen</a>
+			<a href="/hinweise"> Aktuelle Hinweise </a>
+			<a href="#"> Registrieren </a>
+		</div>
+	</div>
+	<div class="main">
+		<% input.forEach(function(tagung){ %>
+			<div class="hinweise_container">
+				<div class="hinweise_datum"><%=tagung.datum%></div>
+				<div class="hinweise_info">
+					<p>Neue Tagung von <%=tagung.redner%> über "<%=tagung.name%>" am <%=tagung.tag%> um <%=tagung.zeitpunkt%> Uhr</p>
+				</div>
+			</div>
+		<% }); %>
+	</div>
+</div>
+
+<%- include ('partials/footer.ejs');  -%>

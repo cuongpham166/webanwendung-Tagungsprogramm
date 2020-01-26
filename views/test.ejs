@@ -1,0 +1,15 @@
+<%- include ('partials/header.ejs');  -%>
+
+<h1>Hello</h1>
+
+<ul>
+
+  <% for (const book of input) { %>
+    <li>
+     <%= book.id %> - <%= book.name %> - <%= book.beitrag %> - <%= book.redner %> - <%= book.raum %> -  <%= book.zeitpunkt %> - <%= book.tag %>
+    </li>
+  <% } %>
+
+</ul>
+
+<%- include ('partials/footer.ejs');  -%>

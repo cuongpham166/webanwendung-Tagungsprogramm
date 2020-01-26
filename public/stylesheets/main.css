@@ -1,0 +1,182 @@
+body{
+	padding:0;
+	margin:0;
+	font-family: 'Roboto', sans-serif;
+}
+
+.body{
+	display: grid;
+	width: 100%;
+	height: 100vh;
+	grid-template-columns: 1fr 6fr;
+	grid-template-rows: 1fr 5fr;
+	grid-template-areas: 
+	"nav nav"
+    "sidebar main";
+}
+
+.nav{
+	grid-area: nav;
+	background-color: #C4C4C4;
+}
+
+.sidebar{
+	grid-area: sidebar;
+	background-color: #808080;
+}
+
+.main{
+	grid-area: main;
+	background-color: #E6E6E6;
+}
+
+.sidebar_wrapper{
+	display: flex;
+	flex-direction: column;
+	padding:50px;
+}
+.text{
+	text-align: center;
+	line-height: 1.6;
+}
+
+
+a{
+	color:#121180;
+}
+
+.sidebar_wrapper a{
+	line-height: 1.6;
+	text-decoration: none;
+	margin:5px;
+	font-weight: bold;
+}
+
+
+td,th{
+	width: 10em;
+	border-bottom:0.5px #BFBFBF solid;
+	border-right:0.5px #BFBFBF solid;
+	line-height: 1.6;
+	text-align: center;
+}
+
+table{
+	border-spacing:unset;
+	border:0.5px #BFBFBF solid;
+	margin-top:30px;
+}
+
+.TDcontainer{
+	border-bottom:1px #BFBFBF solid;
+	padding:10px;
+}
+
+.TDcontainer:last-child{
+	border-bottom: none;
+}
+
+.TDcontainer{
+	background: rgb(255,175,189);
+	background: linear-gradient(0deg, rgba(255,175,189,1) 0%, rgba(255,195,160,1) 147%);
+}
+
+.button a{
+	line-height:1.6;
+	text-decoration: none;
+	color: white;
+	padding:2px 6px;
+	background-color: #11A663;
+	margin:0 5px;
+}
+
+button{
+	line-height: 1.6;
+	margin-top:5px;
+	border: none;
+	color:white;
+	background-color: #E00B00;
+}
+
+button:hover{
+	cursor: pointer;
+}
+
+.img{
+	margin:20px 60px;
+}
+
+input{
+	padding:15px;
+	margin:10px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+}
+
+select{
+	padding:15px;
+	width:180.34px; 
+	margin:10px;
+	border-radius: 10px;
+	border:none;
+	outline: none;
+}
+
+.form{
+	text-align: center;
+	margin-top:30px;
+}
+
+.submit{
+	padding:10px 40px;
+	border-radius: 10px;
+}
+
+.back{
+	text-align: center;
+	margin:10px;
+}
+
+.back a {
+	text-decoration: none;
+	line-height: 1.6;
+	color: #121180;
+}
+
+.update{
+	float: right;
+	margin-right:20%;
+	text-align: right;
+}
+
+.update p {
+	line-height: 1.6;
+	margin:0;
+	color:#121180;
+}
+
+.hinweise_container{
+	margin:30px;
+}
+
+.hinweise_info p{
+	line-height: 1.6;
+	margin:0;
+}
+
+.hinweise_datum{
+	font-weight: bold;
+}
+
+.anlegen{
+	float: right;
+	margin-right:20%;
+	text-align: right;
+}
+
+.anlegen a{
+	text-decoration: none;
+	line-height: 1.6;
+	font-weight: bold;
+}
